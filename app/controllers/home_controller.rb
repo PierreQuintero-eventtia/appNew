@@ -1,14 +1,12 @@
+# frozen_string_literal: true
+
 class HomeController < ApplicationController
-    skip_before_action :authenticate_user!
-  def index
-  end
+  skip_before_action :authenticate_user!
+  def index; end
 
-  def contact
-  end
+  def contact; end
 
-  def terms
-  end
+  def terms; end
 
-  def about_us
-  end
+  def about_us; end
 end

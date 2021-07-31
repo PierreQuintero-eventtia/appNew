@@ -44,6 +44,12 @@
                 <div class="fa fa-sign-out-alt"></div>
                 <b>Sign out</b>
               <% end %>
+              <% if current_user.admin?%>
+                <%= link_to dashboard_path, class: "dropdown-item" do %>
+                  <div class="fas fa-sliders-h"></div>
+                  <b>Dashboard</b>
+                <% end %>
+              <% end %>
             </ul>
           </li>
         <% else %>
